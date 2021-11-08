@@ -1,5 +1,5 @@
 <?php
-
+//prueba
 namespace App\Http\Controllers; 
 
 use Illuminate\Http\Request;
@@ -13,7 +13,7 @@ class AlertaController extends Controller
         
        if (!Auth::user()){
              return -1;
-       }
+       }    
        $id_user = Auth::id();
        $mi_alerta = DB::table('alertas')->where('id_user', $id_user)
                ->where('id_content', $id_content)->get();
