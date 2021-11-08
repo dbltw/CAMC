@@ -1,0 +1,218 @@
+/* INICIO DE ESTILOS PERSONALIZADOS AMC*/
+
+/* Familia fuentes*/
+
+$fuente-1:'Montserrat',
+sans-serif; // f1
+$fuente-2:'Raleway',
+sans-serif; // f2
+$fuente-3:'Open Sans Condensed',
+sans-serif; // f3
+
+/* Colores de fuentes y elementos*/
+$blanco:#ffffff;
+$gris: #5a5a5a;
+$gris-oscuro: #2e2e2e;
+$gris-azul: #69707f;
+$verde: #81b441;
+$amarillo: #fcc433;
+$rojo: #fd3832;
+$azul-claro: #0b86ca;
+$azul-oscuro: #025196;
+$naranja: #f26627;
+$body-color:#f6f6f6;
+$borde-radio-cajas:0.625rem;
+$imagen-logo-caja:164px;
+
+
+
+/* Imagenes personalizadas */
+
+.logo-82x39{
+    width: calc(#{$imagen-logo-caja} - 82px);
+}
+
+/* botones personalizados*/
+
+.boton-naranja{
+    background-color: $naranja;  
+}
+
+
+
+/* pading bocadillo menu movil*/
+
+$pading-bocadillo:0.25rem; // reducimos los padding por defecto del boton bocadillo bootstrap
+
+/*Color background pagina */
+
+body {
+    background-color: $body-color;
+}
+
+
+/* Menu movil */
+
+.navbar-toggler {
+    padding: $pading-bocadillo;
+
+}
+
+/* Submenu movil */
+.tabla-submenu-movil {
+    background-color: $blanco;
+}
+
+.tabla-submenu-movil tr td {
+
+    font: {
+
+        family: $fuente-1;
+        size: 1rem;
+        weight: 400;
+        stretch: normal;
+        style: normal;
+    }
+
+    color:$gris;
+    padding: 1rem;
+
+}
+
+/* Tamaño y formato de texto */
+
+.texto-naranja-bold-16-f1 {
+    font: {
+
+        family: $fuente-1;
+        size: 1rem;
+        weight: bold;
+        stretch: normal;
+        style: normal;
+    }
+
+    color:$naranja;
+    line-height: 2.25;
+    letter-spacing: normal;
+
+}
+
+
+.texto-gris-oscuro-16-f1 {
+    font: {
+
+        family: $fuente-1;
+        size: 1rem;
+        weight: normal;
+        stretch: normal;
+        style: normal;
+    }
+
+    color:$gris-oscuro;
+    line-height: 1.25;
+    letter-spacing: normal;
+
+}
+
+
+
+
+.texto-blanco-16-f3 {
+
+    font: {
+
+        family: $fuente-3;
+        size: 1rem;
+        weight: 700;
+        stretch: condensed;
+        style: normal;
+    }
+
+    color:$blanco;
+    line-height: normal;
+    letter-spacing: normal;
+   
+
+
+}
+
+
+
+
+.texto-azul-32-f1 {
+    font: {
+
+        family: $fuente-1;
+        size: 2rem;
+        weight: normal;
+        stretch: normal;
+        style: normal;
+    }
+
+    color:$azul-oscuro;
+    line-height: 1.06;
+    letter-spacing: normal;
+
+}
+
+.texto-azul-32-f2 {
+    font: {
+
+        family: $fuente-2;
+        size: 2rem;
+        weight: normal;
+        stretch: normal;
+        style: normal;
+    }
+
+    color:$azul-oscuro;
+    line-height: 1.06;
+    letter-spacing: normal;
+
+}
+
+
+
+/*cajas blancas borde redondo*/
+.card{
+   border-radius:$borde-radio-cajas;
+    
+}
+
+
+/* 
+Media PERSONALIZADOS AMC
+
+*/
+
+
+
+@include media-breakpoint-up(sm) {
+    .custom-class {
+        display: block;
+    }
+}
+
+
+
+
+@include media-breakpoint-up(md) {
+    .custom-class {
+        display: block;
+    }
+}
+
+
+@include media-breakpoint-up(lg) {
+    .custom-class {
+        display: block;
+    }
+}
+
+
+
+@include media-breakpoint-up(xl) {
+    .custom-class {
+        display: block;
+    }
+}
