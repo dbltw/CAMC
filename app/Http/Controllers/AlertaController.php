@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
-use App\Alerta;
+use App\Alerta; asdfasdf
 
 class AlertaController extends Controller
 {
