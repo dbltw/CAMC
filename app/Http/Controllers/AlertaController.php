@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use App\Alerta;
 
-class AlertaController extends Controllerr
+class AlertaController extends Controller;
 {
     function setalerta($id_content){
         
